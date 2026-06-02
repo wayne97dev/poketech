@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0c16"/>
+      <stop offset="1" stop-color="#06070d"/>
+    </linearGradient>
+    <linearGradient id="holo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset=".45" stop-color="#7c5cff"/>
+      <stop offset=".75" stop-color="#ec4899"/>
+      <stop offset="1" stop-color="#ffd24a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="78%" cy="22%" r="55%">
+      <stop offset="0" stop-color="#2f6bff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#2f6bff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pack" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e1230"/>
+      <stop offset="1" stop-color="#161a3e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- copy -->
+  <g font-family="'Space Grotesk', system-ui, sans-serif">
+    <g transform="translate(80,150)">
+      <rect x="0" y="-34" width="300" height="40" rx="20" fill="#ffffff10" stroke="#ffffff22"/>
+      <text x="22" y="-7" fill="#98a3c6" font-size="18" letter-spacing="3">LIVE PACK OPENINGS · ON BASE</text>
+    </g>
+    <text x="80" y="290" fill="#eaf0ff" font-size="92" font-weight="700" letter-spacing="-2">Rip packs <tspan fill="url(#holo)">live.</tspan></text>
+    <text x="80" y="392" fill="#eaf0ff" font-size="92" font-weight="700" letter-spacing="-2">Win the <tspan fill="url(#holo)">pulls.</tspan></text>
+    <text x="80" y="470" fill="#98a3c6" font-size="30" font-weight="500">BOOSTER — the on-chain pack break. Powered by $BOOST.</text>
+
+    <g transform="translate(80,520)">
+      <rect width="210" height="58" rx="14" fill="url(#holo)"/>
+      <text x="105" y="38" fill="#0a0c16" font-size="26" font-weight="700" text-anchor="middle">$BOOST</text>
+      <rect x="230" y="0" width="150" height="58" rx="14" fill="#0052ff"/>
+      <text x="305" y="38" fill="#fff" font-size="24" font-weight="700" text-anchor="middle">BASE</text>
+    </g>
+  </g>
+
+  <!-- pack art -->
+  <g transform="translate(880,315) rotate(-8)">
+    <rect x="-130" y="-200" width="260" height="400" rx="22" fill="url(#pack)" stroke="#ffffff24"/>
+    <rect x="-130" y="-200" width="260" height="400" rx="22" fill="url(#holo)" opacity="0.16"/>
+    <text x="0" y="-150" fill="#fff" font-family="'Space Grotesk',sans-serif" font-size="22" font-weight="700" letter-spacing="6" text-anchor="middle">BOOSTER</text>
+    <path d="M30 -60 -34 36h38l-12 60 70 -96h-44z" fill="url(#holo)"/>
+    <text x="-105" y="170" fill="#fff" font-family="'Space Grotesk',sans-serif" font-size="26" font-weight="700">$BOOST</text>
+    <rect x="40" y="146" width="86" height="34" rx="8" fill="#0052ff"/>
+    <text x="83" y="170" fill="#fff" font-family="'Space Grotesk',sans-serif" font-size="16" font-weight="700" letter-spacing="2" text-anchor="middle">BASE</text>
+  </g>
+</svg>

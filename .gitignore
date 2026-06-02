@@ -1,0 +1,19 @@
+# --- secrets ---
+.env
+*.env
+!*.env.example
+
+# --- Foundry ---
+contract/out/
+contract/cache/
+contract/broadcast/
+contract/lib/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# --- node (not used yet) ---
+node_modules/

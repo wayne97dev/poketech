@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BOOSTER ($BOOST) — Rip Packs Live. On BASE.</title>
+  <meta name="description" content="BOOSTER turns sealed booster packs into live, on-chain entertainment on BASE. Buy a bundle, watch us rip it live, win the pulls. Powered by $BOOST." />
+  <meta name="theme-color" content="#0052ff" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="BOOSTER ($BOOST) — Rip Packs Live. On BASE." />
+  <meta property="og:description" content="Buy a bundle, watch us rip it live, win the pulls. Powered by $BOOST on BASE." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/og.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2322d3ee'/%3E%3Cstop offset='.5' stop-color='%237c5cff'/%3E%3Cstop offset='1' stop-color='%23ec4899'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='%23070912'/%3E%3Cpath d='M18 5 9 18h6l-2 9 11-14h-7z' fill='url(%23g)'/%3E%3C/svg%3E" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- ====================== NAV ====================== -->
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a class="brand" href="#top" aria-label="BOOSTER home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28">
+            <defs>
+              <linearGradient id="boltGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#22d3ee"/>
+                <stop offset=".5" stop-color="#7c5cff"/>
+                <stop offset="1" stop-color="#ec4899"/>
+              </linearGradient>
+            </defs>
+            <path d="M18 4 8 19h6l-2 9 11-15h-7z" fill="url(#boltGrad)"/>
+          </svg>
+        </span>
+        <span class="brand__name">BOOSTER</span>
+        <span class="brand__ticker">$BOOST</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#how">How it works</a>
+        <a href="#bundles">Bundles</a>
+        <a href="#tokenomics">Tokenomics</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a class="btn btn--ghost" href="#live" data-social="live">Watch Live</a>
+        <a class="btn btn--primary" href="#buy">Buy $BOOST</a>
+      </div>
+
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ====================== HERO ====================== -->
+  <section class="hero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <div class="hero__copy reveal">
+        <span class="eyebrow"><span class="dot"></span> Live pack openings · on BASE</span>
+        <h1 class="hero__title">
+          Rip packs <span class="holo">live.</span><br />
+          Win the <span class="holo">pulls.</span>
+        </h1>
+        <p class="hero__sub">
+          BOOSTER turns sealed booster packs into live, on-chain entertainment.
+          Buy a bundle, watch our team rip it on stream, and the chase cards are yours.
+          Powered by <strong>$BOOST</strong> on BASE.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary btn--lg" href="#buy">Buy $BOOST</a>
+          <a class="btn btn--ghost btn--lg" href="#live" data-social="live">▶ Watch the next break</a>
+        </div>
+
+        <!-- Contract pill -->
+        <button class="ca" id="copyCa" type="button" title="Copy contract address">
+          <span class="ca__label">CA</span>
+          <span class="ca__value" id="caValue">TBA — launching soon</span>
+          <span class="ca__copy" id="caCopy" aria-hidden="true">Copy</span>
+        </button>
+
+        <!-- Live stats -->
+        <ul class="stats" aria-label="Token stats">
+          <li><span class="stats__num" data-stat="price">—</span><span class="stats__key">Price</span></li>
+          <li><span class="stats__num" data-stat="mcap">—</span><span class="stats__key">Market cap</span></li>
+          <li><span class="stats__num" data-stat="liq">—</span><span class="stats__key">Liquidity</span></li>
+          <li><span class="stats__num" data-stat="packs">0</span><span class="stats__key">Packs ripped</span></li>
+        </ul>
+      </div>
+
+      <!-- Pack art -->
+      <div class="hero__art reveal" aria-hidden="true">
+        <div class="pack">
+          <div class="pack__shine"></div>
+          <div class="pack__foil"></div>
+          <div class="pack__top">BOOSTER</div>
+          <div class="pack__logo">
+            <svg viewBox="0 0 64 64" width="92" height="92">
+              <path d="M36 8 16 38h12l-4 18 22-30H32z" fill="url(#boltGrad)"/>
+            </svg>
+          </div>
+          <div class="pack__bottom">
+            <span>$BOOST</span>
+            <span class="pack__chip">BASE</span>
+          </div>
+        </div>
+        <div class="card card--a"></div>
+        <div class="card card--b"></div>
+        <div class="card card--c"></div>
+      </div>
+    </div>
+
+    <!-- Ticker -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>RIP LIVE</span><span class="sep">◆</span><span>$BOOST</span><span class="sep">◆</span>
+        <span>ON BASE</span><span class="sep">◆</span><span>CHASE THE HOLO</span><span class="sep">◆</span>
+        <span>RIP LIVE</span><span class="sep">◆</span><span>$BOOST</span><span class="sep">◆</span>
+        <span>ON BASE</span><span class="sep">◆</span><span>CHASE THE HOLO</span><span class="sep">◆</span>
+        <span>RIP LIVE</span><span class="sep">◆</span><span>$BOOST</span><span class="sep">◆</span>
+        <span>ON BASE</span><span class="sep">◆</span><span>CHASE THE HOLO</span><span class="sep">◆</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== HOW IT WORKS ====================== -->
+  <section class="section" id="how">
+    <div class="container">
+      <header class="head reveal">
+        <span class="eyebrow">How it works</span>
+        <h2 class="head__title">Four steps from <span class="holo">buy</span> to <span class="holo">pull</span></h2>
+        <p class="head__sub">No middlemen, no fake hype — just packs, ripped live, on-chain.</p>
+      </header>
+
+      <ol class="steps">
+        <li class="step reveal">
+          <span class="step__n">01</span>
+          <h3>Grab $BOOST</h3>
+          <p>Buy the token on BASE through Aerodrome or Uniswap. Your bag is your ticket to every break.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__n">02</span>
+          <h3>Pick a bundle</h3>
+          <p>Choose a booster tier — from a single pack to a sealed vintage box. Pay in $BOOST or ETH.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__n">03</span>
+          <h3>We rip it live</h3>
+          <p>Our team opens your packs on a live stream. Every pull is on camera — no edits, no swaps.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__n">04</span>
+          <h3>Win the pulls</h3>
+          <p>Hit a chase card? It's yours — shipped worldwide, or instantly cashed out in $BOOST.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ====================== LIVE ====================== -->
+  <section class="section section--tight" id="live">
+    <div class="container">
+      <div class="live reveal">
+        <div class="live__info">
+          <span class="eyebrow"><span class="dot dot--red"></span> Live stream</span>
+          <h2 class="head__title">Watch the next <span class="holo">break</span></h2>
+          <p class="head__sub">Breaks drop daily. Drop in, call your pulls in chat, and ride the holo hunt with the community.</p>
+          <a class="btn btn--primary" href="#" data-social="live">Open the stream</a>
+        </div>
+        <div class="live__screen">
+          <div class="live__badge">● LIVE SOON</div>
+          <div class="live__play">▶</div>
+          <p>Stream embed goes here</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== BUNDLES ====================== -->
+  <section class="section" id="bundles">
+    <div class="container">
+      <header class="head reveal">
+        <span class="eyebrow">Bundles</span>
+        <h2 class="head__title">Pick your <span class="holo">booster</span></h2>
+        <p class="head__sub">Indicative tiers — exact packs &amp; prices announced before every break.</p>
+      </header>
+
+      <div class="tiers">
+        <article class="tier reveal">
+          <h3 class="tier__name">Starter Booster</h3>
+          <p class="tier__price">~0.02 ETH</p>
+          <p class="tier__desc">A single modern pack. Perfect first rip to feel the rush.</p>
+          <ul class="tier__list">
+            <li>1× modern booster pack</li>
+            <li>Live on-stream rip</li>
+            <li>Cards shipped or paid in $BOOST</li>
+          </ul>
+          <a class="btn btn--ghost btn--block" href="#buy">Get $BOOST</a>
+        </article>
+
+        <article class="tier tier--featured reveal">
+          <span class="tier__flag">Most popular</span>
+          <h3 class="tier__name">Rare Booster</h3>
+          <p class="tier__price">~0.1 ETH</p>
+          <p class="tier__desc">A multi-pack run with real chase odds. Where the holos live.</p>
+          <ul class="tier__list">
+            <li>6× packs, mixed sets</li>
+            <li>Priority queue in the break</li>
+            <li>Holder-only $BOOST cashback</li>
+          </ul>
+          <a class="btn btn--primary btn--block" href="#buy">Get $BOOST</a>
+        </article>
+
+        <article class="tier reveal">
+          <h3 class="tier__name">Legendary Booster</h3>
+          <p class="tier__price">~0.5 ETH</p>
+          <p class="tier__desc">Sealed boxes, vintage &amp; graded chases. Whale energy only.</p>
+          <ul class="tier__list">
+            <li>1× sealed box / vintage lot</li>
+            <li>Dedicated solo break</li>
+            <li>Graded-card vault option</li>
+          </ul>
+          <a class="btn btn--ghost btn--block" href="#buy">Get $BOOST</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== TOKENOMICS ====================== -->
+  <section class="section" id="tokenomics">
+    <div class="container">
+      <header class="head reveal">
+        <span class="eyebrow">Tokenomics</span>
+        <h2 class="head__title">Built <span class="holo">fair</span>. Fueled by the breaks.</h2>
+        <p class="head__sub">$BOOST captures the value of every rip — revenue flows back into buybacks and the pack treasury.</p>
+      </header>
+
+      <div class="tok">
+        <div class="tok__chart reveal">
+          <div class="pie" role="img" aria-label="Token distribution: 85% liquidity, 10% treasury, 5% marketing"></div>
+          <ul class="legend">
+            <li><span class="legend__dot" style="--c:#2f6bff"></span>Liquidity (locked) <b>85%</b></li>
+            <li><span class="legend__dot" style="--c:#a855f7"></span>Pack treasury <b>10%</b></li>
+            <li><span class="legend__dot" style="--c:#ec4899"></span>Marketing <b>5%</b></li>
+          </ul>
+        </div>
+
+        <div class="tok__facts reveal">
+          <div class="fact">
+            <span class="fact__k">Total supply</span>
+            <span class="fact__v">1,000,000,000 <em>$BOOST</em></span>
+          </div>
+          <div class="fact">
+            <span class="fact__k">Tax</span>
+            <span class="fact__v">0% / 0% <em>buy &amp; sell</em></span>
+          </div>
+          <div class="fact">
+            <span class="fact__k">Liquidity</span>
+            <span class="fact__v">Locked &amp; renounced</span>
+          </div>
+          <div class="fact">
+            <span class="fact__k">Break revenue</span>
+            <span class="fact__v">Buybacks + treasury</span>
+          </div>
+          <p class="tok__note">
+            A clean, fair launch: no team tax, liquidity locked, contract renounced.
+            The only "utility" is the fun — and the value the breaks bring back to holders.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== ROADMAP ====================== -->
+  <section class="section" id="roadmap">
+    <div class="container">
+      <header class="head reveal">
+        <span class="eyebrow">Roadmap</span>
+        <h2 class="head__title">The <span class="holo">grind</span></h2>
+      </header>
+
+      <ol class="road">
+        <li class="road__item reveal">
+          <span class="road__phase">Phase 1 — Launch</span>
+          <h3>Go live</h3>
+          <p>$BOOST launches on BASE, liquidity locked, site live, and the very first pack break on stream.</p>
+        </li>
+        <li class="road__item reveal">
+          <span class="road__phase">Phase 2 — Scale</span>
+          <h3>Daily breaks</h3>
+          <p>Bundle store opens, daily live rips, holder cashback, and a community pull leaderboard.</p>
+        </li>
+        <li class="road__item reveal">
+          <span class="road__phase">Phase 3 — Platform</span>
+          <h3>Provably fair</h3>
+          <p>On-chain pack odds &amp; verifiable randomness, partner breakers, and an open creator program.</p>
+        </li>
+        <li class="road__item reveal">
+          <span class="road__phase">Phase 4 — IRL</span>
+          <h3>The vault</h3>
+          <p>Graded-card vault, merch drops, and live BOOSTER events. From the timeline to your shelf.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ====================== BUY ====================== -->
+  <section class="section" id="buy">
+    <div class="container">
+      <div class="buy reveal">
+        <div class="buy__glow" aria-hidden="true"></div>
+        <span class="eyebrow">Get $BOOST</span>
+        <h2 class="head__title">Grab your bag, <span class="holo">join the rip</span></h2>
+        <p class="head__sub">$BOOST trades on BASE. Connect a wallet, swap, and you're in for every break.</p>
+        <div class="buy__steps">
+          <span>1 · Bridge ETH to BASE</span>
+          <span>2 · Open Aerodrome / Uniswap</span>
+          <span>3 · Swap ETH → $BOOST</span>
+        </div>
+        <div class="buy__cta">
+          <a class="btn btn--primary btn--lg" href="#" data-buy="dex">Buy on Aerodrome</a>
+          <a class="btn btn--ghost btn--lg" href="#" data-buy="chart">View chart</a>
+        </div>
+        <button class="ca ca--center" id="copyCa2" type="button" title="Copy contract address">
+          <span class="ca__label">CA</span>
+          <span class="ca__value">TBA — launching soon</span>
+          <span class="ca__copy" aria-hidden="true">Copy</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== FAQ ====================== -->
+  <section class="section" id="faq">
+    <div class="container container--narrow">
+      <header class="head reveal">
+        <span class="eyebrow">FAQ</span>
+        <h2 class="head__title">Good to <span class="holo">know</span></h2>
+      </header>
+
+      <div class="faq">
+        <details class="faq__item reveal">
+          <summary>What is BOOSTER?</summary>
+          <p>BOOSTER is a community token on BASE built around live booster-pack openings. We buy sealed packs, rip them on stream, and the pulls go to the community. $BOOST is the token that powers it.</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>Which chain is it on?</summary>
+          <p>BASE — the Ethereum L2 by Coinbase. $BOOST is a standard ERC-20, so it works with any BASE-compatible wallet (Coinbase Wallet, MetaMask, Rabby…).</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>Are the packs real?</summary>
+          <p>Yes. Every pack is genuine and sealed, opened live on camera. No edits, no swaps — what you see pulled is what you get.</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>How do I get my cards?</summary>
+          <p>Winners choose: have the physical cards shipped worldwide, or take an instant payout in $BOOST at market value.</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>How do I buy $BOOST?</summary>
+          <p>Bridge ETH to BASE, open Aerodrome or Uniswap, and swap ETH for $BOOST using the official contract address (published at launch — always verify it here).</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>Is this gambling?</summary>
+          <p>Opening packs carries an element of chance and BOOSTER is high-risk entertainment, not an investment. Know your local laws, only spend what you can afford to lose, and 18+ only.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="brand" href="#top">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="24" height="24"><path d="M18 4 8 19h6l-2 9 11-15h-7z" fill="url(#boltGrad)"/></svg>
+          </span>
+          <span class="brand__name">BOOSTER</span>
+        </a>
+        <p class="footer__tag">Rip packs live. On BASE.</p>
+      </div>
+
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#how">How it works</a>
+        <a href="#bundles">Bundles</a>
+        <a href="#tokenomics">Tokenomics</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="footer__social">
+        <a href="#" data-social="x" aria-label="X / Twitter">X</a>
+        <a href="#" data-social="tg" aria-label="Telegram">Telegram</a>
+        <a href="#" data-social="dc" aria-label="Discord">Discord</a>
+      </div>
+    </div>
+
+    <div class="container footer__legal">
+      <p>© <span id="year">2026</span> BOOSTER. $BOOST is a community token for entertainment. Nothing here is financial advice. Crypto is volatile and high-risk — pack openings carry an element of chance. 18+. Check your local regulations.</p>
+    </div>
+  </footer>
+
+  <!-- Shared SVG gradient def for footer/inline marks -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="boltGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#22d3ee"/>
+        <stop offset=".5" stop-color="#7c5cff"/>
+        <stop offset="1" stop-color="#ec4899"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
