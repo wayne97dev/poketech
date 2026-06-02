@@ -24,7 +24,7 @@
   <rect width="1200" height="630" fill="url(#glow)"/>
 
   <!-- copy -->
-  <g font-family="'Space Grotesk', system-ui, sans-serif">
+  <g font-family="'Pixelify Sans', ui-monospace, monospace">
     <g transform="translate(80,150)">
       <rect x="0" y="-34" width="300" height="40" rx="20" fill="#ffffff10" stroke="#ffffff22"/>
       <text x="22" y="-7" fill="#98a3c6" font-size="18" letter-spacing="3">LIVE PACK OPENINGS · ON BASE</text>
@@ -45,10 +45,10 @@
   <g transform="translate(880,315) rotate(-8)">
     <rect x="-130" y="-200" width="260" height="400" rx="22" fill="url(#pack)" stroke="#ffffff24"/>
     <rect x="-130" y="-200" width="260" height="400" rx="22" fill="url(#holo)" opacity="0.16"/>
-    <text x="0" y="-150" fill="#fff" font-family="'Space Grotesk',sans-serif" font-size="22" font-weight="700" letter-spacing="6" text-anchor="middle">BOOSTER</text>
+    <text x="0" y="-150" fill="#fff" font-family="'Pixelify Sans', ui-monospace, monospace" font-size="22" font-weight="700" letter-spacing="6" text-anchor="middle">BOOSTER</text>
     <path d="M30 -60 -34 36h38l-12 60 70 -96h-44z" fill="url(#holo)"/>
-    <text x="-105" y="170" fill="#fff" font-family="'Space Grotesk',sans-serif" font-size="26" font-weight="700">$BOOST</text>
+    <text x="-105" y="170" fill="#fff" font-family="'Pixelify Sans', ui-monospace, monospace" font-size="26" font-weight="700">$BOOST</text>
     <rect x="40" y="146" width="86" height="34" rx="8" fill="#0052ff"/>
-    <text x="83" y="170" fill="#fff" font-family="'Space Grotesk',sans-serif" font-size="16" font-weight="700" letter-spacing="2" text-anchor="middle">BASE</text>
+    <text x="83" y="170" fill="#fff" font-family="'Pixelify Sans', ui-monospace, monospace" font-size="16" font-weight="700" letter-spacing="2" text-anchor="middle">BASE</text>
   </g>
 </svg>
