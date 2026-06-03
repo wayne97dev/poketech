@@ -198,56 +198,56 @@
         <article class="pcard pcard--fire reveal" title="Ember #01">
           <span class="pcard__n">01</span>
           <span class="pcard__owners"><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#ic-user"/></svg>6</span>
-          <svg class="pcard__art" viewBox="0 0 16 16" aria-hidden="true"><use href="#cr-body"/><use href="#top-fire"/></svg>
+          <svg class="pcard__art" viewBox="0 0 16 16" aria-hidden="true"><use href="#cr-fire"/></svg>
           <span class="pcard__val">0.018 <span>Ξ</span></span>
         </article>
 
         <article class="pcard pcard--grass reveal" title="Sprout #02">
           <span class="pcard__n">02</span>
           <span class="pcard__owners"><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#ic-user"/></svg>7</span>
-          <svg class="pcard__art" viewBox="0 0 16 16" aria-hidden="true"><use href="#cr-body"/><use href="#top-grass"/></svg>
+          <svg class="pcard__art" viewBox="0 0 16 16" aria-hidden="true"><use href="#cr-grass"/></svg>
           <span class="pcard__val">0.019 <span>Ξ</span></span>
         </article>
 
         <article class="pcard pcard--water reveal" title="Drip #03">
           <span class="pcard__n">03</span>
           <span class="pcard__owners"><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#ic-user"/></svg>6</span>
-          <svg class="pcard__art" viewBox="0 0 16 16" aria-hidden="true"><use href="#cr-body"/><use href="#top-water"/></svg>
+          <svg class="pcard__art" viewBox="0 0 16 16" aria-hidden="true"><use href="#cr-water"/></svg>
           <span class="pcard__val">0.012 <span>Ξ</span></span>
         </article>
 
         <article class="pcard pcard--electric reveal" title="Volt #04">
           <span class="pcard__n">04</span>
           <span class="pcard__owners"><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#ic-user"/></svg>7</span>
-          <svg class="pcard__art" viewBox="0 0 16 16" aria-hidden="true"><use href="#cr-body"/><use href="#top-bolt"/></svg>
+          <svg class="pcard__art" viewBox="0 0 16 16" aria-hidden="true"><use href="#cr-electric"/></svg>
           <span class="pcard__val">0.021 <span>Ξ</span></span>
         </article>
 
         <article class="pcard pcard--dragon reveal" title="Draco #05">
           <span class="pcard__n">05</span>
           <span class="pcard__owners"><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#ic-user"/></svg>5</span>
-          <svg class="pcard__art" viewBox="0 0 16 16" aria-hidden="true"><use href="#cr-body"/><use href="#top-horns"/></svg>
+          <svg class="pcard__art" viewBox="0 0 16 16" aria-hidden="true"><use href="#cr-dragon"/></svg>
           <span class="pcard__val">0.044 <span>Ξ</span></span>
         </article>
 
         <article class="pcard pcard--star reveal" title="Nova #06 · Legendary">
           <span class="pcard__n">06</span>
           <span class="pcard__owners"><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#ic-user"/></svg>9</span>
-          <svg class="pcard__art" viewBox="0 0 16 16" aria-hidden="true"><use href="#cr-body"/><use href="#top-star"/></svg>
+          <svg class="pcard__art" viewBox="0 0 16 16" aria-hidden="true"><use href="#cr-star"/></svg>
           <span class="pcard__val">0.180 <span>Ξ</span></span>
         </article>
 
         <article class="pcard pcard--rock reveal" title="Pebble #07">
           <span class="pcard__n">07</span>
           <span class="pcard__owners"><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#ic-user"/></svg>7</span>
-          <svg class="pcard__art" viewBox="0 0 16 16" aria-hidden="true"><use href="#cr-body"/><use href="#top-rock"/></svg>
+          <svg class="pcard__art" viewBox="0 0 16 16" aria-hidden="true"><use href="#cr-rock"/></svg>
           <span class="pcard__val">0.009 <span>Ξ</span></span>
         </article>
 
         <article class="pcard pcard--ghost reveal" title="Wisp #08">
           <span class="pcard__n">08</span>
           <span class="pcard__owners"><svg viewBox="0 0 16 16" aria-hidden="true"><use href="#ic-user"/></svg>6</span>
-          <svg class="pcard__art" viewBox="0 0 16 16" aria-hidden="true"><use href="#cr-body"/><use href="#top-ghost"/></svg>
+          <svg class="pcard__art" viewBox="0 0 16 16" aria-hidden="true"><use href="#cr-ghost"/></svg>
           <span class="pcard__val">0.033 <span>Ξ</span></span>
         </article>
       </div>
@@ -488,79 +488,71 @@
     </defs>
   </svg>
 
-  <!-- Pixel-creature sprite sheet (original art — swap with your own) -->
+  <!-- Pixel-creature sprite sheet — original art, swap with your own -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+    <linearGradient id="holoGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/><stop offset=".4" stop-color="#7c5cff"/><stop offset=".72" stop-color="#ec4899"/><stop offset="1" stop-color="#ffd24a"/>
+    </linearGradient>
     <symbol id="ic-user" viewBox="0 0 16 16"><path d="M8 8a3 3 0 100-6 3 3 0 000 6Zm-6 7c0-3.3 2.7-5 6-5s6 1.7 6 5v1H2Z"/></symbol>
 
-    <!-- shared body: fill follows the card's type colour (currentColor) -->
-    <symbol id="cr-body" viewBox="0 0 16 16">
-      <g shape-rendering="crispEdges" fill="currentColor">
-        <rect x="6" y="4" width="4" height="1"/>
-        <rect x="5" y="5" width="6" height="1"/>
-        <rect x="4" y="6" width="8" height="5"/>
-        <rect x="5" y="11" width="6" height="1"/>
-        <rect x="5" y="12" width="2" height="1"/>
-        <rect x="9" y="12" width="2" height="1"/>
-      </g>
-      <g shape-rendering="crispEdges">
-        <rect x="5" y="7" width="2" height="2" fill="#15101e"/>
-        <rect x="9" y="7" width="2" height="2" fill="#15101e"/>
-        <rect x="5" y="7" width="1" height="1" fill="#ffffff" opacity=".85"/>
-        <rect x="9" y="7" width="1" height="1" fill="#ffffff" opacity=".85"/>
-      </g>
-    </symbol>
-
-    <symbol id="top-fire" viewBox="0 0 16 16"><g shape-rendering="crispEdges">
-      <rect x="7" y="1" width="2" height="3" fill="#ff7a3c"/>
-      <rect x="8" y="0" width="1" height="2" fill="#ffd24a"/>
-      <rect x="7" y="2" width="1" height="1" fill="#ffd24a"/>
+    <symbol id="cr-fire" viewBox="0 0 16 16"><g shape-rendering="crispEdges">
+      <g fill="#ff8a3d"><rect x="6" y="3" width="4" height="1"/><rect x="5" y="4" width="6" height="2"/><rect x="4" y="6" width="8" height="4"/><rect x="5" y="10" width="6" height="1"/><rect x="5" y="11" width="2" height="1"/><rect x="9" y="11" width="2" height="1"/></g>
+      <g fill="#ffc38a"><rect x="6" y="8" width="4" height="1"/></g>
+      <g fill="#ffd24a"><rect x="8" y="0" width="1" height="1"/><rect x="7" y="1" width="2" height="1"/><rect x="8" y="2" width="1" height="1"/></g>
+      <g fill="#2a1018"><rect x="6" y="6" width="1" height="2"/><rect x="9" y="6" width="1" height="2"/></g>
+      <g fill="#fff"><rect x="6" y="6" width="1" height="1"/><rect x="9" y="6" width="1" height="1"/></g>
     </g></symbol>
 
-    <symbol id="top-grass" viewBox="0 0 16 16"><g shape-rendering="crispEdges">
-      <rect x="8" y="1" width="1" height="3" fill="#2fa860"/>
-      <rect x="6" y="2" width="2" height="1" fill="#46d17f"/>
-      <rect x="9" y="2" width="2" height="1" fill="#46d17f"/>
-      <rect x="7" y="0" width="3" height="1" fill="#46d17f"/>
+    <symbol id="cr-grass" viewBox="0 0 16 16"><g shape-rendering="crispEdges">
+      <g fill="#2f9e54"><rect x="8" y="3" width="1" height="2"/></g>
+      <g fill="#7ee59b"><rect x="7" y="1" width="3" height="1"/><rect x="5" y="2" width="3" height="2"/><rect x="9" y="2" width="3" height="2"/></g>
+      <g fill="#4fcf72"><rect x="6" y="5" width="4" height="1"/><rect x="5" y="6" width="6" height="4"/><rect x="6" y="10" width="4" height="1"/><rect x="6" y="11" width="1" height="1"/><rect x="9" y="11" width="1" height="1"/></g>
+      <g fill="#9bf0b5"><rect x="6" y="8" width="4" height="1"/></g>
+      <g fill="#2a1018"><rect x="6" y="7" width="1" height="2"/><rect x="9" y="7" width="1" height="2"/></g>
+      <g fill="#fff"><rect x="6" y="7" width="1" height="1"/><rect x="9" y="7" width="1" height="1"/></g>
     </g></symbol>
 
-    <symbol id="top-water" viewBox="0 0 16 16"><g shape-rendering="crispEdges">
-      <rect x="8" y="0" width="1" height="1" fill="#cdecff"/>
-      <rect x="8" y="1" width="1" height="2" fill="#8fd0ff"/>
-      <rect x="7" y="3" width="3" height="1" fill="#8fd0ff"/>
+    <symbol id="cr-water" viewBox="0 0 16 16"><g shape-rendering="crispEdges">
+      <g fill="#3aa0ff"><rect x="8" y="2" width="1" height="1"/><rect x="7" y="3" width="2" height="1"/><rect x="7" y="4" width="3" height="1"/><rect x="6" y="5" width="4" height="1"/><rect x="5" y="6" width="6" height="3"/><rect x="6" y="9" width="4" height="1"/></g>
+      <g fill="#8fd0ff"><rect x="11" y="6" width="1" height="1"/><rect x="10" y="7" width="2" height="2"/><rect x="11" y="9" width="1" height="1"/><rect x="8" y="4" width="1" height="1"/></g>
+      <g fill="#2a1018"><rect x="6" y="6" width="1" height="2"/><rect x="9" y="6" width="1" height="2"/></g>
+      <g fill="#fff"><rect x="6" y="6" width="1" height="1"/><rect x="9" y="6" width="1" height="1"/></g>
     </g></symbol>
 
-    <symbol id="top-bolt" viewBox="0 0 16 16"><g shape-rendering="crispEdges" fill="#ffd24a">
-      <rect x="9" y="0" width="1" height="2"/>
-      <rect x="9" y="2" width="1" height="1"/>
-      <rect x="8" y="2" width="1" height="1"/>
-      <rect x="7" y="3" width="2" height="1"/>
+    <symbol id="cr-electric" viewBox="0 0 16 16"><g shape-rendering="crispEdges">
+      <g fill="#ffd23a"><rect x="6" y="5" width="4" height="1"/><rect x="5" y="6" width="6" height="1"/><rect x="4" y="7" width="8" height="2"/><rect x="5" y="9" width="6" height="1"/><rect x="6" y="10" width="4" height="1"/><rect x="6" y="11" width="1" height="1"/><rect x="9" y="11" width="1" height="1"/></g>
+      <g fill="#ff9e2c"><rect x="7" y="2" width="1" height="1"/><rect x="8" y="3" width="1" height="1"/><rect x="7" y="4" width="1" height="1"/><rect x="10" y="2" width="1" height="1"/><rect x="9" y="3" width="1" height="1"/><rect x="10" y="4" width="1" height="1"/><rect x="3" y="7" width="1" height="1"/><rect x="12" y="8" width="1" height="1"/></g>
+      <g fill="#2a1018"><rect x="6" y="7" width="1" height="2"/><rect x="9" y="7" width="1" height="2"/></g>
+      <g fill="#fff"><rect x="6" y="7" width="1" height="1"/><rect x="9" y="7" width="1" height="1"/></g>
     </g></symbol>
 
-    <symbol id="top-horns" viewBox="0 0 16 16"><g shape-rendering="crispEdges" fill="#5b3fa0">
-      <rect x="5" y="1" width="1" height="1"/>
-      <rect x="5" y="2" width="1" height="2"/>
-      <rect x="10" y="1" width="1" height="1"/>
-      <rect x="10" y="2" width="1" height="2"/>
+    <symbol id="cr-dragon" viewBox="0 0 16 16"><g shape-rendering="crispEdges">
+      <g fill="#5b3fa0"><rect x="6" y="1" width="1" height="2"/><rect x="9" y="1" width="1" height="2"/><rect x="3" y="13" width="2" height="1"/></g>
+      <g fill="#8c6bff"><rect x="6" y="3" width="4" height="3"/><rect x="6" y="6" width="3" height="2"/><rect x="5" y="8" width="4" height="3"/><rect x="4" y="11" width="2" height="1"/><rect x="3" y="12" width="2" height="1"/></g>
+      <g fill="#b9a3ff"><rect x="11" y="5" width="1" height="1"/><rect x="9" y="6" width="3" height="1"/><rect x="10" y="7" width="3" height="1"/><rect x="9" y="8" width="3" height="1"/></g>
+      <g fill="#cdbcff"><rect x="6" y="8" width="2" height="2"/></g>
+      <g fill="#2a1018"><rect x="6" y="4" width="1" height="2"/><rect x="8" y="4" width="1" height="2"/></g>
+      <g fill="#fff"><rect x="6" y="4" width="1" height="1"/><rect x="8" y="4" width="1" height="1"/></g>
     </g></symbol>
 
-    <symbol id="top-rock" viewBox="0 0 16 16"><g shape-rendering="crispEdges" fill="#9b9088">
-      <rect x="7" y="2" width="2" height="1"/>
-      <rect x="6" y="3" width="2" height="1"/>
-      <rect x="9" y="3" width="2" height="1"/>
+    <symbol id="cr-star" viewBox="0 0 16 16"><g shape-rendering="crispEdges">
+      <g fill="url(#holoGrad)"><rect x="7" y="1" width="2" height="2"/><rect x="6" y="3" width="4" height="2"/><rect x="4" y="5" width="8" height="1"/><rect x="2" y="6" width="12" height="2"/><rect x="4" y="8" width="8" height="1"/><rect x="6" y="9" width="4" height="2"/><rect x="7" y="11" width="2" height="2"/></g>
+      <g fill="#1a1230"><rect x="6" y="6" width="1" height="2"/><rect x="9" y="6" width="1" height="2"/></g>
+      <g fill="#fff"><rect x="6" y="6" width="1" height="1"/><rect x="9" y="6" width="1" height="1"/></g>
     </g></symbol>
 
-    <symbol id="top-ghost" viewBox="0 0 16 16"><g shape-rendering="crispEdges" fill="#d9b3ff">
-      <rect x="5" y="3" width="1" height="2"/>
-      <rect x="10" y="3" width="1" height="2"/>
-      <rect x="4" y="2" width="1" height="1" opacity=".6"/>
-      <rect x="11" y="3" width="1" height="1" opacity=".6"/>
+    <symbol id="cr-rock" viewBox="0 0 16 16"><g shape-rendering="crispEdges">
+      <g fill="#b9a08a"><rect x="5" y="4" width="6" height="1"/><rect x="4" y="5" width="8" height="1"/><rect x="3" y="6" width="10" height="3"/><rect x="4" y="9" width="8" height="2"/><rect x="4" y="11" width="2" height="1"/><rect x="9" y="11" width="2" height="1"/></g>
+      <g fill="#d8c6b0"><rect x="4" y="5" width="2" height="1"/></g>
+      <g fill="#8a755f"><rect x="5" y="3" width="1" height="1"/><rect x="9" y="3" width="1" height="1"/><rect x="11" y="7" width="1" height="2"/><rect x="7" y="9" width="2" height="1"/></g>
+      <g fill="#2a1018"><rect x="5" y="6" width="2" height="2"/><rect x="9" y="6" width="2" height="2"/></g>
+      <g fill="#fff"><rect x="5" y="6" width="1" height="1"/><rect x="9" y="6" width="1" height="1"/></g>
     </g></symbol>
 
-    <symbol id="top-star" viewBox="0 0 16 16"><g shape-rendering="crispEdges" fill="#ffd24a">
-      <rect x="8" y="0" width="1" height="4"/>
-      <rect x="6" y="2" width="5" height="1"/>
-      <rect x="7" y="1" width="1" height="1" opacity=".8"/>
-      <rect x="9" y="1" width="1" height="1" opacity=".8"/>
+    <symbol id="cr-ghost" viewBox="0 0 16 16"><g shape-rendering="crispEdges">
+      <g fill="#b06cff"><rect x="6" y="3" width="4" height="1"/><rect x="5" y="4" width="6" height="1"/><rect x="4" y="5" width="8" height="6"/><rect x="3" y="7" width="1" height="1"/><rect x="12" y="7" width="1" height="1"/><rect x="4" y="11" width="2" height="1"/><rect x="7" y="11" width="2" height="1"/><rect x="10" y="11" width="2" height="1"/></g>
+      <g fill="#fff"><rect x="5" y="6" width="2" height="2"/><rect x="9" y="6" width="2" height="2"/></g>
+      <g fill="#2a1018"><rect x="6" y="7" width="1" height="1"/><rect x="9" y="7" width="1" height="1"/></g>
     </g></symbol>
   </defs></svg>
 
